@@ -1,0 +1,61 @@
+<%- include ('partials/_header') %>
+
+<%- include ('partials/messageDanger') %>
+
+
+
+<div id="buscar">
+    <h3 >Buscar Cliente</h3>
+</div>
+<div class="container" id="buscarCliente">
+    <div class="row mt-5">
+        <div class="card" id="cardBuscarCliente">
+                <div class="card-body">
+                    <form action="/buscarClientex" method="POST">
+                        <label><b>Ingrese el documento</b></label>
+                        <div class="form-group">
+                            <input type="search" name="documento" autofocus required class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary"> Buscar cliente &nbsp; &nbsp;
+                                <i class="far fa-user"></i>
+
+                        </button>
+                    </form>
+                </div>
+        </div>
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<%- include ('partials/_footer') %>
+
+
+
+
+
+
+
+
+

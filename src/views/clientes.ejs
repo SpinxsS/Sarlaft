@@ -1,0 +1,86 @@
+<!-- Esta clase es una vista que contiene el formulario para agregar nuevos clientes no potencializables pero
+a su vez contiene la visualización de todos los clientes que se encuentran guardados en la base de datos con la
+posibilidad de actualiza o borrar cualquiera de ellos -->
+
+<%- include ('partials/_header') %>
+
+<%- include ('partials/message') %>
+
+
+<div id="clientesNoPotencializables">
+        <label><b>Clientes no potencializables</b></label>
+    </div>
+    <div  id="tablaClientes">
+        <div class="row " id="caja">
+                <table class="table table-bordered" id="tabla">
+                    <thead>
+                        <tr>
+                            <th width="80px">Id</th>
+                            <th>Documento</th>
+                            <th>Nombre</th>
+                            <th>Instrucción</th>
+                            <th>Comité</th>
+                            <th width="140px">Fecha_Inclusión</th>
+                            <th width="240px">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (data) { %>
+                            <% for (var i=0; i<data.length; i++){ %>
+                                <tr>
+                                    <td width="10px";><%= (i + 1)%></td>
+                                    <td width="10px"><%= data[i].documento%></td>
+                                    <td width="10px"><%= data[i].nombre%></td>
+                                    <td width="10px"><%= data[i].instruccion%></td>
+                                    <td width="10px"><%= data[i].comite%></td>
+                                    <td width="10px"><%= data[i].fechaIngreso%></td>
+                                    <td>
+                                        <a href="/delete/<%=data[i].id%>" class="btn btn-danger"> Eliminar </a>
+                                        <a href="/update/<%=data[i].id%>" class="btn btn-info"> Actualizar 
+                                            <i class="fas fa-check-circle"></i></a>
+                                    </td>
+                                    </tr>
+                            <% }%>
+                        <% }%>
+                    </tbody>
+                </table>
+            </div>
+           
+                                                    
+            <div id="cajaformulario">
+                <h3>Inserte un cliente</h3>
+                <div class="card" id="formulario">
+                    <div class="card-body" >
+                        <form action="/add" method="POST">
+                            <label><b>Ingrese el documento</b></label>
+                            <div class="form-group">
+                                <input type="text" name="documento" class="form-control" required >
+                            </div>
+                            <label><b>Ingrese el nombre</b></label>
+                            <div class="form-group">
+                                <input type="text" name="nombre" class="form-control" required pattern="[a-z]*" title="El nombre de usuario debería tener sólo caracteres"> 
+                            </div>
+                            <label><b>Ingrese la instrucción</b></label>
+                            <div class="form-group">
+                                <input type="text" name="instruccion" class="form-control" required pattern="[a-z]*">
+                            </div>
+                            <label><b>Ingrese el comité</b></label>
+                            <div class="form-group">
+                                <input type="text" name="comite" class="form-control" required pattern="[a-z]*">
+                            </div>
+                            <label><b>Ingrese la fecha de ingreso</b></label>
+                            <div class="form-group">
+                                <input type="date" name="fechaIngreso" class="form-control" required >
+                            </div>
+                            <button type="submit" class="btn btn-primary"> Guardar cliente
+                                    <i class="fas fa-plus-circle"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        
+        </div>
+
+<%- include ('partials/_footer') %>

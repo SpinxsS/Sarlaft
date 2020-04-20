@@ -1,0 +1,46 @@
+<!-- Esta clase es una vista que contiene el formulario para actualizar un cliente no potencializable -->
+
+
+<%- include ('partials/_header') %>
+
+<div class="container mt-5" id="editarCliente">
+    <h3 id="editar">Editar Cliente</h3>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/update/<%= data.id%>" method="POST">
+                        <label><b>Ingrese el nombre</b></label>
+                        <div class="form-group">
+                            <input type="text" name="nombre" value="<%= data.nombre %>"  class="form-control">
+                        </div>
+                        <label><b>Ingrese el documento</b></label>
+                        <div class="form-group">
+                            <input type="text" name="documento" value="<%= data.documento %>" class="form-control">
+                        </div>
+                        <label><b>Ingrese la instrucción</b></label>
+                        <div class="form-group">
+                            <input type="text" name="instruccion" value="<%= data.instruccion %>" ccion" class="form-control">
+                        </div>
+                        <label><b>Ingrese el comité</b></label>
+                        <div class="form-group">
+                            <input type="text" name="comite" value="<%= data.comite %>"  class="form-control">
+                        </div>
+                        <!--<div class="form-group">
+                            <input type="date" name="fechaIngreso" value="<%= data.fechaIngreso %>" class="form-control">
+                        </div> -->
+                        <div>
+                            <button type="submit" class="btn btn-primary"> Editar cliente
+                                    <i class="fas fa-check-circle"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include ('partials/_footer') %>

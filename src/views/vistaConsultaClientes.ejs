@@ -1,0 +1,44 @@
+<%- include ('partials/_header') %>
+
+<div class="div" id="cajaClienteBuscado">
+<form action="/mostrarClienteBuscado">
+    <div class="row " id="cajaBuscarCliente">
+            <table class="table table-bordered" id="tabla">
+            <thead>
+                <tr>
+                    <th width="80px">Id</th>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Instruccion</th>
+                    <th>Comite</th>
+                    <th width="140px">Fecha_Inclusión</th>
+                    <th width="240px">Acciones</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <% if (data) { %>
+                    <% for (var i=0; i<data.length; i++){ %>
+                        <tr>
+                            <td width="10px";><%= (i + 1)%></td>
+                            <td width="10px"><%= data[i].documento%></td>
+                            <td width="10px"><%= data[i].nombre%></td>
+                            <td width="10px"><%= data[i].instruccion%></td>
+                            <td width="10px"><%= data[i].comite%></td>
+                            <td width="10px"><%= data[i].fechaIngreso%></td>
+                            <td>
+                                <a href="/delete/<%=data[i].id%>" class="btn btn-danger"> Eliminar </a>
+                                <a href="/update/<%=data[i].id%>" class="btn btn-info"> Actualizar<i class="fas fa-check-circle"></i></a> </a>
+                               
+                            </td>
+                        </tr>
+                    <% }%>
+                <% }%>
+            </tbody>
+        </table>
+    </div>
+</form>
+<a href="/buscar" class="btn btn-primary"> Regresar a buscar cliente </a>
+</div>
+
+<%- include ('partials/_footer') %>

@@ -1,0 +1,109 @@
+html,body{
+    height:100%;
+    width:100%;
+  }
+
+#tablaClientes{
+    left: 2%;
+    top: 240px;
+    position: relative;
+    width: 100% !important;
+}
+#caja{
+    position:relative;
+    left: 2px;
+    width: 950px;
+}
+#cajaClienteBuscado{
+    position:relative;
+    left: 2px;
+    width: 950px;
+    height: 4000px;
+}
+
+#cajaBuscarCliente{
+    position:relative;
+    left: 2px;
+    width: 950px;
+}
+
+#buscarCliente{
+    position: absolute;
+    left: 40%;
+    top: 190px;
+}
+
+#buscar{
+    position: absolute;
+    left: 580px;
+    top: 190px;
+}
+
+#cardBuscarCliente{
+    width: 260px;
+}
+
+#clientesNoPotencializables{
+    position: absolute;
+    left: 320px;
+    top: 250px;
+    font-family: "Gelion-semibold", sans-serif;
+    font-size: 30px;
+    color: #1a2442;
+    box-sizing: inherit;
+
+}
+
+
+th{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+#editar{
+    position: relative;
+    left: 130px;
+}
+
+#editarCliente{
+    position: absolute;
+    left: 430px;
+}
+
+#tabla{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 10px 5px;
+    width: 1100px;
+    border: 1px;
+}
+
+#formulario{
+    right: 10%;
+    position: relative;
+    padding: 1em 1.5em;
+  appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid ;
+  border-radius: 0;
+}
+
+
+#cajaformulario{
+    position: absolute;
+    right: 3%;
+    top: 10px;
+}
+
+
+
+#inicioSesion{
+    width: 400px !important;
+}
+
+.login-form.codigo{
+    background-image: url(//i.imgur.com/LFqEfQA.png);
+}
