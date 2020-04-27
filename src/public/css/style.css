@@ -104,6 +104,21 @@ th{
     width: 400px !important;
 }
 
-.login-form.codigo{
-    background-image: url(//i.imgur.com/LFqEfQA.png);
+#btnCerrarSesion{
+    background-color: transparent;
+    border:1px solid rgb(235, 231, 231);
+}
+
+#titulos-home{
+    position: absolute;
+    top: 130px;
+    background-color: #F1F1F7;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.bg-dark{
+    background-color: #1a2744!important;
 }

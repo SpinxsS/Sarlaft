@@ -6,6 +6,10 @@ posibilidad de actualiza o borrar cualquiera de ellos -->
 
 <%- include ('partials/message') %>
 
+<div id="titulos-home">
+    <h2><i class="far fa-user-circle"></i><span> </span>Gestiona tus clientes</h2>
+    <p>Accede de forma ágil a las plataformas de pago virtual.</p>
+    </div>
 
 <div id="clientesNoPotencializables">
         <label><b>Clientes no potencializables</b></label>
@@ -16,10 +20,10 @@ posibilidad de actualiza o borrar cualquiera de ellos -->
                     <thead>
                         <tr>
                             <th width="80px">Id</th>
-                            <th>Documento</th>
-                            <th>Nombre</th>
-                            <th>Instrucción</th>
-                            <th>Comité</th>
+                            <th width="130px">Documento</th>
+                            <th width="180px">Nombre</th>
+                            <th width="180px">Instrucción</th>
+                            <th width="180px">Comité</th>
                             <th width="140px">Fecha_Inclusión</th>
                             <th width="240px">Acciones</th>
                         </tr>
@@ -58,15 +62,15 @@ posibilidad de actualiza o borrar cualquiera de ellos -->
                             </div>
                             <label><b>Ingrese el nombre</b></label>
                             <div class="form-group">
-                                <input type="text" name="nombre" class="form-control" required pattern="[a-z]*" title="El nombre de usuario debería tener sólo caracteres"> 
+                                <input type="text" name="nombre" class="form-control" required pattern="[A-Z]*" title="El nombre de usuario debería tener sólo caracteres mayúsculos"> 
                             </div>
                             <label><b>Ingrese la instrucción</b></label>
                             <div class="form-group">
-                                <input type="text" name="instruccion" class="form-control" required pattern="[a-z]*">
+                                <input type="text" name="instruccion" class="form-control">
                             </div>
                             <label><b>Ingrese el comité</b></label>
                             <div class="form-group">
-                                <input type="text" name="comite" class="form-control" required pattern="[a-z]*">
+                                <input type="text" name="comite" class="form-control">
                             </div>
                             <label><b>Ingrese la fecha de ingreso</b></label>
                             <div class="form-group">
