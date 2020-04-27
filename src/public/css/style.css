@@ -19,7 +19,7 @@ html,body{
     left: 2px;
     width: 950px;
     height: 4000px;
-}
+} 
 
 #cajaBuscarCliente{
     position:relative;
@@ -102,6 +102,20 @@ th{
 
 #inicioSesion{
     width: 400px !important;
+    border-radius: 2px;
+}
+
+#cuadroSesion{
+    position: absolute;
+    top: 260px!important;
+    left: 680px;
+}
+
+#cuadroRegistro{
+    position: absolute;
+    top: 240px!important;
+    left: 440px;
+    width: 900px
 }
 
 #btnCerrarSesion{
@@ -118,6 +132,22 @@ th{
 
 }
 
+.inner-addon {
+    position: relative;
+    color: aqua;
+  }
+.inner-addon .fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+  }
+.left-addon .fa {
+    left: 0px;
+  }
+
+.left-addon input {
+    padding-left: 30px;
+}
 
 .bg-dark{
     background-color: #1a2744!important;

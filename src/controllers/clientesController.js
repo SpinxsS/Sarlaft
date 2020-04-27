@@ -69,7 +69,7 @@ controller.guardarUsuarios = async (req, res) => {
 //Descripción: Método que verifica si las credenciales de usuario y contraseña que se ingresan en el formulario de 
 //login se encuentran en la base de datos, sí es así inicia sesión ( utilizando un método post que envía los datos
 // desde la vista) , sino se queda en la página de login hasta que se ingrese un usuario previamente registrado.
-//Tipo de consulta: POST
+//Tipo de consulta: POST 
 //Tabla de mysql: usuarios
 controller.iniciarSesion = async (req, res) => {
     const codigoQueVieneDelFormulario = req.body.codigo;

@@ -1,6 +1,6 @@
 const Connection = require('tedious').Connection;
 
-
+ 
 var config = {
   user: 'sa',
   password: 'Etropos1203*',

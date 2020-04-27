@@ -3,7 +3,7 @@ Middleware:
 - Bloque de código que se ejecuta entre la petición que hace el usuario(request) hasta que la petición llega al servidor.
 https://devcode.la/tutoriales/middlewares-en-nodejs
 
-
+ 
 Dependencias
 
 - body-parser: permite convertir los datos que vienen desde el cliente (ej: un formulario) al servidor en objetos json para su interpretación.

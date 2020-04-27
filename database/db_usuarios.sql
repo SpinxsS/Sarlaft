@@ -10,4 +10,4 @@ CREATE TABLE `usuarios` (
 
 SHOW TABLES;
 
-describe usuarios;
+describe usuarios; 

@@ -1,5 +1,5 @@
 CREATE DATABASE appmysql;
-
+ 
 use appmysql;
 
 CREATE TABLE `clientesnopotencializables` (

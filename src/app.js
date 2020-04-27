@@ -18,7 +18,7 @@ const clientesRoutes = require('./routes/rutasApp');
 app.set('port', process.env.PORT || 3000);
 app.set('view engine ', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
+ 
   //Configuración para las sesiones y el uso de cookies en nodejs y express
   app.use(cookieParser());
   app.use(session ({
