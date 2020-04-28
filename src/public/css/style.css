@@ -1,6 +1,7 @@
 html,body{
     height:100%;
     width:100%;
+ 
   }
 
 #tablaClientes{
@@ -107,13 +108,13 @@ th{
 
 #cuadroSesion{
     position: absolute;
-    top: 260px!important;
+    top: 190px!important;
     left: 680px;
 }
 
 #cuadroRegistro{
     position: absolute;
-    top: 240px!important;
+    top: 170px!important;
     left: 440px;
     width: 900px
 }
@@ -144,7 +145,7 @@ th{
 .left-addon .fa {
     left: 0px;
   }
-
+ 
 .left-addon input {
     padding-left: 30px;
 }
@@ -152,3 +153,127 @@ th{
 .bg-dark{
     background-color: #1a2744!important;
 }
+
+
+#footer{
+    background-color: black;
+    position: absolute;
+    top: 650px;
+    width: 100%;
+    text-align: center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-primary {
+    background-color: #000 !important;
+   }
+   
+   .bg-circle
+   {
+     display: inline-block;
+     width: 60px;
+     height: 60px;
+     padding: 14px 4px;
+     color: #ececec;
+     text-align: center;
+     border-radius: 50%;
+   }
+   
+   .bg-circle-outline
+   {
+     width: 50px;
+     height: 50px;
+     color:smoke;
+     padding: 8px 2px;
+     border: 2px solid;
+     border-color: smoke;
+     border-radius: 50%;
+   }
+   
+   
+   .bg-circle a, a:hover, .media a:focus
+   {
+     text-decoration: none !important;
+     outline: none;
+     color: #ececec;
+   }
+   .bg-circle-outline a, a:hover, .media a:focus
+   {
+     text-decoration: none !important;
+     outline: none;
+     color: #ececec;
+   }
+
+   #footer{
+       position: absolute;
+       top: 589px;
+   }
+
+#twitter{
+ position: absolute;
+ top: 23px;
+ color: white;
+}
+#contacto{
+ position: absolute;
+ top: 23px;
+ left: 10px;
+ color: white;
+}
+#cookies{
+ position: absolute;
+ top: 100px;
+ left: 25px;
+ color: white; 
+}
+#facebook{
+ position: absolute;
+ top: 23px;
+ color: white;
+}
+#instagram{
+position: absolute;
+top: 100px;
+color: white;  
+}
+
+   
