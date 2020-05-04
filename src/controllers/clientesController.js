@@ -41,6 +41,11 @@ controller.mostrarVistaLogin = (req, res) => {
     res.render('login.ejs')
 };
 
+
+controller.mostrarVistaAgregar = (req, res) => {
+    res.render('agregarCliente.ejs');
+};
+
 //Descripción: Método post que registra los usuarios en la base de datos ( guarda los usuarios ).
 //Tipo de consulta: POST
 //Tabla de mysql: usuarios

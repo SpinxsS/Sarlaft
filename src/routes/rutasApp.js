@@ -17,6 +17,9 @@ router.get('/', clientesController.listarClientes);
 
 router.post('/add', clientesController.guardarClientes);
 
+router.get('/add', clientesController.mostrarVistaAgregar);
+
+
 router.get('/delete/:id', clientesController.eliminarClientes);
 
 //En este caso tenemos rutas similares para el "update" pero las funciones que realizan son diferentes.

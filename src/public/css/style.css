@@ -5,7 +5,7 @@ html,body{
   }
 
 #tablaClientes{
-    left: 2%;
+    left: 290px;
     top: 240px;
     position: relative;
     width: 100% !important;
@@ -46,7 +46,7 @@ html,body{
 
 #clientesNoPotencializables{
     position: absolute;
-    left: 320px;
+    left: 640px;
     top: 250px;
     font-family: "Gelion-semibold", sans-serif;
     font-size: 30px;
@@ -95,8 +95,8 @@ th{
 
 #cajaformulario{
     position: absolute;
-    right: 3%;
-    top: 10px;
+    left: 750px;
+    top: 59px;
 }
 
 

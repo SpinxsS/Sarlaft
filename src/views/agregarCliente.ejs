@@ -1,0 +1,39 @@
+<%- include ('partials/_header') %>
+ 
+<%- include ('partials/messageDanger') %>
+
+
+<div id="cajaformulario">
+        <h3>Inserte un cliente</h3>
+        <div class="card" id="formulario">
+            <div class="card-body" >
+                <form action="/add" method="POST">
+                    <label><b>Ingrese el documento</b></label>
+                    <div class="form-group">
+                        <input type="text" name="documento" class="form-control" required >
+                    </div>
+                    <label><b>Ingrese el nombre</b></label>
+                    <div class="form-group">
+                        <input type="text" name="nombre" class="form-control" required pattern="[A-Z ]+" title="El nombre de usuario debería tener sólo caracteres mayúsculos"> 
+                    </div>
+                    <label><b>Ingrese la instrucción</b></label>
+                    <div class="form-group">
+                        <input type="text" name="instruccion" class="form-control">
+                    </div>
+                    <label><b>Ingrese el comité</b></label>
+                    <div class="form-group">
+                        <input type="text" name="comite" class="form-control">
+                    </div>
+                    <label><b>Ingrese la fecha de ingreso</b></label>
+                    <div class="form-group">
+                        <input type="date" name="fechaIngreso" class="form-control" required >
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Guardar cliente
+                            <i class="fas fa-plus-circle"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include ('partials/_footer') %>
