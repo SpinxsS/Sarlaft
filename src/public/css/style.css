@@ -1,33 +1,30 @@
 html,body{
     height:100%;
     width:100%;
- 
-  }
+}
 
-#tablaClientes{
-    left: 290px;
-    top: 240px;
-    position: relative;
-    width: 100% !important;
+#tituloTablaClienteBuscado{
+    position:absolute;
+    top: 130px;
+    left: 650px;
 }
-#caja{
-    position:relative;
-    left: 2px;
-    width: 950px;
-}
+
 #cajaClienteBuscado{
     position:relative;
     left: 2px;
-    width: 950px;
-    height: 4000px;
+    width: 1550px;
 } 
 
 #cajaBuscarCliente{
-    position:relative;
-    left: 2px;
+    position:absolute;
+    left: 390px;
     width: 950px;
+    top:200px;
 }
 
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo para la vista de buscar cliente*/
 #buscarCliente{
     position: absolute;
     left: 40%;
@@ -36,13 +33,20 @@ html,body{
 
 #buscar{
     position: absolute;
-    left: 580px;
+    left: 705px;
     top: 190px;
 }
 
 #cardBuscarCliente{
     width: 260px;
 }
+
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Vista de tabla de clientes*/
 
 #clientesNoPotencializables{
     position: absolute;
@@ -55,13 +59,44 @@ html,body{
 
 }
 
+#titulos-home{
+    position: absolute;
+    top: 130px;
+    background-color: #F1F1F7;
+    width: 100%;
+    text-align: center;
+    font-family: Gelion-semibold";
+}
+
+#tablaClientes{
+    left: 290px;
+    top: 240px;
+    position: relative;
+    width: 100% !important;
+}
+
+#caja{
+    position:relative;
+    left: 2px;
+    width: 950px;
+}
+
+#tabla{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 10px 5px;
+    width: 1100px;
+    border: 1px;
+}
 
 th{
     background-color: black;
     color: white;
     text-align: center;
-
 }
+
+
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
 
 #editar{
     position: relative;
@@ -73,33 +108,31 @@ th{
     left: 630px;
 }
 
-#tabla{
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-spacing: 10px 5px;
-    width: 1100px;
-    border: 1px;
-}
 
-#formulario{
-    right: 10%;
-    position: relative;
-    padding: 1em 1.5em;
-  appearance: none;
-  outline: none;
-  line-height: normal;
-  border: 1px solid ;
-  border-radius: 0;
-}
-
-
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo de vista para agregar un cliente*/
 #cajaformulario{
     position: absolute;
     left: 750px;
     top: 59px;
 }
 
+#formulario{
+    right: 10%;
+    position: relative;
+    padding: 1em 1.5em;
+    appearance: none;
+    outline: none;
+    line-height: normal;
+    border: 1px solid ;
+    border-radius: 0;
+}
 
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo del inicio de sesión*/
 
 #inicioSesion{
     width: 400px !important;
@@ -112,6 +145,13 @@ th{
     left: 680px;
 }
 
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo del registro*/
+
 #cuadroRegistro{
     position: absolute;
     top: 170px!important;
@@ -119,23 +159,21 @@ th{
     width: 900px
 }
 
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
+
 #btnCerrarSesion{
     background-color: transparent;
     border:1px solid rgb(235, 231, 231);
 }
 
-#titulos-home{
-    position: absolute;
-    top: 130px;
-    background-color: #F1F1F7;
-    width: 100%;
-    text-align: center;
 
-}
 
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo de los íconos*/
 .inner-addon {
     position: relative;
-    color: aqua;
+    color: black;
   }
 .inner-addon .fa {
     position: absolute;
@@ -149,11 +187,27 @@ th{
 .left-addon input {
     padding-left: 30px;
 }
-
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
 .bg-dark{
     background-color: #1a2744!important;
 }
 
+
+
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo para botones*/
+.bg-primary {
+    background-color: #000 !important;
+}
+
+/*-------------------------------------------------fin------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------comienzo----------------------------------------------------------------------*/
+/*Estilo del footer*/
 
 #footer{
     background-color: black;
@@ -162,118 +216,70 @@ th{
     width: 100%;
     text-align: center
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bg-primary {
-    background-color: #000 !important;
-   }
    
-   .bg-circle
-   {
-     display: inline-block;
-     width: 60px;
-     height: 60px;
-     padding: 14px 4px;
-     color: #ececec;
-     text-align: center;
-     border-radius: 50%;
-   }
+.bg-circle{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 14px 4px;
+    color: #ececec;
+    text-align: center;
+    border-radius: 50%;
+}
    
-   .bg-circle-outline
-   {
-     width: 50px;
-     height: 50px;
-     color:smoke;
-     padding: 8px 2px;
-     border: 2px solid;
-     border-color: smoke;
-     border-radius: 50%;
-   }
+.bg-circle-outline{
+    width: 50px;
+    height: 50px;
+    color:smoke;
+    padding: 8px 2px;
+    border: 2px solid;
+    border-color: smoke;
+    border-radius: 50%;
+}
    
-   
-   .bg-circle a, a:hover, .media a:focus
-   {
-     text-decoration: none !important;
-     outline: none;
-     color: #ececec;
-   }
-   .bg-circle-outline a, a:hover, .media a:focus
-   {
-     text-decoration: none !important;
-     outline: none;
-     color: #ececec;
-   }
+.bg-circle a, a:hover, .media a:focus{
+    text-decoration: none !important;
+    outline: none;
+    color: #ececec;
+}
 
-   #footer{
-       position: absolute;
-       top: 589px;
-   }
+.bg-circle-outline a, a:hover, .media a:focus{
+    text-decoration: none !important;
+    outline: none;
+    color: #ececec;
+} 
 
 #twitter{
- position: absolute;
- top: 23px;
- color: white;
-}
-#contacto{
- position: absolute;
- top: 23px;
- left: 10px;
- color: white;
-}
-#cookies{
- position: absolute;
- top: 100px;
- left: 25px;
- color: white; 
-}
-#facebook{
- position: absolute;
- top: 23px;
- color: white;
-}
-#instagram{
-position: absolute;
-top: 100px;
-color: white;  
+    position: absolute;
+    top: 23px;
+    color: white;
 }
 
-   
+#contacto{
+    position: absolute;
+    top: 23px;
+    left: 10px;
+    color: white;
+}
+
+#cookies{
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    color: white; 
+}
+
+#facebook{
+    position: absolute;
+    top: 23px;
+    color: white;
+}
+
+#instagram{
+    position: absolute;
+    top: 100px;
+    color: white;  
+}
+
+ /*-------------------------------------------------fin------------------------------------------------------------------------*/
+  

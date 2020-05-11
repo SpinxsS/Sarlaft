@@ -218,7 +218,7 @@ controller.buscarCliente =  async (req, res) => {
                 }
                 else{
                     console.log("NO HA ENCONTRADO A UN CLIENTE CON ESE DOCUMENTO");
-                    req.flash('success', 'No se ha encontrado a un cliente con ese documento. Por favor ingrese de nuevo el documento');
+                    req.flash('success', 'No se ha encontrado a ningún cliente con ese documento. Por favor ingrese de nuevo el documento');
                     res.redirect('/buscar');
                 };
             });

@@ -2,6 +2,9 @@
  
 <div class="div" id="cajaClienteBuscado">
 <form action="/mostrarClienteBuscado">
+    <div id="tituloTablaClienteBuscado">
+        <h3>Clientes no potencializables</h3>
+    </div>
     <div class="row " id="cajaBuscarCliente">
             <table class="table table-bordered" id="tabla">
             <thead>
@@ -36,9 +39,9 @@
                 <% }%>
             </tbody>
         </table>
+        <a href="/buscar" class="btn btn-primary"> Regresar a buscar cliente </a>
     </div>
 </form>
-<a href="/buscar" class="btn btn-primary"> Regresar a buscar cliente </a>
 </div>
 
 <%- include ('partials/_footer') %>
