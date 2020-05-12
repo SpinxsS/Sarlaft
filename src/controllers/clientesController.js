@@ -97,6 +97,7 @@ controller.iniciarSesion = async (req, res) => {
                     if(resultado.length > 0 ){
                         req.session.loggedin = true;
                         req.session.codigo = codigoQueVieneDelFormulario;
+                        req.flash('success', 'Se ha iniciado sesión correctamente');
                         res.redirect('/');
                     }
                     else{
@@ -217,7 +218,7 @@ controller.buscarCliente =  async (req, res) => {
                     );
                 }
                 else{
-                    console.log("NO HA ENCONTRADO A UN CLIENTE CON ESE DOCUMENTO");
+                    //console.log("NO HA ENCONTRADO A UN CLIENTE CON ESE DOCUMENTO");
                     req.flash('success', 'No se ha encontrado a ningún cliente con ese documento. Por favor ingrese de nuevo el documento');
                     res.redirect('/buscar');
                 };
