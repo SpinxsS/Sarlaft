@@ -78,7 +78,6 @@ controller.guardarUsuarios = async (req, res) => {
 //Tabla de mysql: usuarios
 controller.iniciarSesion = async (req, res) => {
     const codigoQueVieneDelFormulario = req.body.codigo;
-    const nombreQueVieneDelFormulario = req.body.nombre;
     const passwordQueVieneDelFormulario = req.body.contrasena;
     //Condicional: si el nombre y la password que se escriben en el formulario de login no están vacíos, entra al condicional.
     //De lo contrario, redirige al login
@@ -101,6 +100,7 @@ controller.iniciarSesion = async (req, res) => {
                         res.redirect('/');
                     }
                     else{
+                        //req.flash('success', 'El nombre de usuario y la contraseña que ingresaste no coinciden con nuestros registros. Por favor, revisa e inténtalo de nuevo.');
                         res.redirect('/login');
                     }
                 }
