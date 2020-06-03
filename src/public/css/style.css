@@ -62,7 +62,7 @@ html,body{
 #titulos-home{
     position: absolute;
     top: 130px;
-    background-color: #F1F1F7;
+    background-color: #000028 ;
     width: 100%;
     text-align: center;
     font-family: Gelion-semibold";
@@ -285,3 +285,9 @@ th{
 
  /*-------------------------------------------------fin------------------------------------------------------------------------*/
   
+h2 {
+    color: white;
+  }
+h5{
+    color:white
+}
