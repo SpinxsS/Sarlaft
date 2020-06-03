@@ -151,7 +151,7 @@ controller.mostrarVistaClientes = async (req, res) =>{
     //Condicional: sí el usurario está logueado, entra al condicional. De lo contrario, se redirige al login.
     if( req.session.loggedin){
            await pool.query('SELECT * FROM clientesnopotencializables WHERE id = ?', [id], (err, clientes) =>{
-                res.render('clientes_edit.ejs', {
+                res.render('editarClientes.ejs', {
                     data: clientes[0]
                 });
             });

@@ -1,6 +1,6 @@
 const Connection = require('tedious').Connection;
 
- 
+ //Configuracion del servidor de MySQL.
 var config = {
   user: 'sa',
   password: 'Etropos1203*',
@@ -8,6 +8,7 @@ var config = {
   database:'APP_SARLAFT'
   };
 
+  //proceso para la conexion con la base de datos.
   var connection = new Connection(config);
 
   connection.on('connect', function(err){
